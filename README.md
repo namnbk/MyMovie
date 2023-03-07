@@ -1,8 +1,8 @@
-# Project 2 - *Watch Your Movie*
+# Project 2 - *MyMovie*
 
 Submitted by: **Nam Hoang**
 
-**Watch Your Movie** is a movie browsing app that helps you keep track of the popular movie around and look for more detailed information. 
+**MyMovie** is a movie browsing app that helps you keep track of the popular movie around and look for more detailed information. 
 
 Time spent: **9** hours spent in total
 
