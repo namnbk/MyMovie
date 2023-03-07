@@ -31,7 +31,7 @@ class DetailViewController: UIViewController {
         // Push the information from the instance variable to the screen
         detailTitle.text = movie.title;
         // Image
-        let imageUrl = URL(string: "https://image.tmdb.org/t/p/original/\(movie.backdrop_path)")!;
+        let imageUrl = URL(string: "https://image.tmdb.org/t/p/original\(movie.backdrop_path)")!;
         Nuke.loadImage(with: imageUrl, into: detailPoster)
         // The information
         voteAverage.text = "\(movie.vote_average) vote average";

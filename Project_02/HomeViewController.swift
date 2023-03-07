@@ -55,6 +55,15 @@ class HomeViewController: UIViewController, UITableViewDataSource {
                 destination.movie = movie;
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Get the index path for the current selected table view row (if exists)
+        if let indexPath = tableView.indexPathForSelectedRow {
+            // Deselect the row at the corresponding index path
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+    }
 
 }
 

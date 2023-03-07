@@ -46,6 +46,28 @@ func mockData() -> [Movie]? {
         print("error: \(error)")
     }
     return nil;
+
+    
+//    return [
+//        Movie(title: "Knock at the Cabin", overview: "While vacationing at a remote cabin, a young girl and her two fathers are taken hostage by four armed strangers who demand that the family make an unthinkable choice to avert the apocalypse. With limited access to the outside world, the family must decide what they believe before all is lost.", poster_path: "/dm06L9pxDOL9jNSK4Cb6y139rrG.jpg", backdrop_path: "/22z44LPkMyf5nyyXvv8qQLsbom.jpg", popularity: 4969.06, vote_average: 6.6, vote_count: 778),
+//        Movie(title: "Knock at the Cabin", overview: "While vacationing at a remote cabin, a young girl and her two fathers are taken hostage by four armed strangers who demand that the family make an unthinkable choice to avert the apocalypse. With limited access to the outside world, the family must decide what they believe before all is lost.", poster_path: "/dm06L9pxDOL9jNSK4Cb6y139rrG.jpg", backdrop_path: "/22z44LPkMyf5nyyXvv8qQLsbom.jpg", popularity: 4969.06, vote_average: 6.6, vote_count: 778),
+//        Movie(title: "Knock at the Cabin", overview: "While vacationing at a remote cabin, a young girl and her two fathers are taken hostage by four armed strangers who demand that the family make an unthinkable choice to avert the apocalypse. With limited access to the outside world, the family must decide what they believe before all is lost.", poster_path: "/dm06L9pxDOL9jNSK4Cb6y139rrG.jpg", backdrop_path: "/22z44LPkMyf5nyyXvv8qQLsbom.jpg", popularity: 4969.06, vote_average: 6.6, vote_count: 778),
+//        Movie(title: "Knock at the Cabin", overview: "While vacationing at a remote cabin, a young girl and her two fathers are taken hostage by four armed strangers who demand that the family make an unthinkable choice to avert the apocalypse. With limited access to the outside world, the family must decide what they believe before all is lost.", poster_path: "/dm06L9pxDOL9jNSK4Cb6y139rrG.jpg", backdrop_path: "/22z44LPkMyf5nyyXvv8qQLsbom.jpg", popularity: 4969.06, vote_average: 6.6, vote_count: 778),
+//        Movie(title: "Knock at the Cabin", overview: "While vacationing at a remote cabin, a young girl and her two fathers are taken hostage by four armed strangers who demand that the family make an unthinkable choice to avert the apocalypse. With limited access to the outside world, the family must decide what they believe before all is lost.", poster_path: "/dm06L9pxDOL9jNSK4Cb6y139rrG.jpg", backdrop_path: "/22z44LPkMyf5nyyXvv8qQLsbom.jpg", popularity: 4969.06, vote_average: 6.6, vote_count: 778)
+//    ];
+    
+//    do {
+//        if let filePath = Bundle.main.path(forResource: "moviesDB", ofType: "json") {
+//            let fileUrl = URL(fileURLWithPath: filePath)
+//            let jsonData = try Data(contentsOf: fileUrl)
+//            // try parsing the json data
+//            let movies = parse(from: jsonData)!.results;
+//            return movies;
+//        }
+//    } catch {
+//        print("error: \(error)")
+//    }
+//    return nil
 }
 
 //// Extend the struct with one more property - the mock data

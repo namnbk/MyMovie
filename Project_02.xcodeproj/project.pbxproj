@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF79B5C529B704E000FB25EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF79B5BF29B7024A00FB25EA /* Assets.xcassets */; };
 		BF9413E429B5EB6E00CFB3D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9413E329B5EB6E00CFB3D1 /* AppDelegate.swift */; };
 		BF9413E629B5EB6E00CFB3D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9413E529B5EB6E00CFB3D1 /* SceneDelegate.swift */; };
 		BF9413E829B5EB6E00CFB3D1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9413E729B5EB6E00CFB3D1 /* HomeViewController.swift */; };
 		BF9413EB29B5EB6E00CFB3D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9413E929B5EB6E00CFB3D1 /* Main.storyboard */; };
-		BF9413ED29B5EB6F00CFB3D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9413EC29B5EB6F00CFB3D1 /* Assets.xcassets */; };
 		BF9413F029B5EB6F00CFB3D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9413EE29B5EB6F00CFB3D1 /* LaunchScreen.storyboard */; };
 		BF9413FC29B5F27F00CFB3D1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9413FB29B5F27F00CFB3D1 /* Movie.swift */; };
 		BF9413FE29B5F8A000CFB3D1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9413FD29B5F8A000CFB3D1 /* DetailViewController.swift */; };
@@ -20,12 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF79B5BF29B7024A00FB25EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Project_02/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		BF9413E029B5EB6E00CFB3D1 /* Project_02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9413E329B5EB6E00CFB3D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF9413E529B5EB6E00CFB3D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BF9413E729B5EB6E00CFB3D1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BF9413EA29B5EB6E00CFB3D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BF9413EC29B5EB6F00CFB3D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF9413EF29B5EB6F00CFB3D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF9413F129B5EB6F00CFB3D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF9413FB29B5F27F00CFB3D1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -71,8 +71,8 @@
 				BF9413E729B5EB6E00CFB3D1 /* HomeViewController.swift */,
 				BF9413FF29B6031600CFB3D1 /* MovieCell.swift */,
 				BF9413E929B5EB6E00CFB3D1 /* Main.storyboard */,
-				BF9413EC29B5EB6F00CFB3D1 /* Assets.xcassets */,
 				BF9413EE29B5EB6F00CFB3D1 /* LaunchScreen.storyboard */,
+				BF79B5BF29B7024A00FB25EA /* Assets.xcassets */,
 				BF9413F129B5EB6F00CFB3D1 /* Info.plist */,
 			);
 			path = Project_02;
@@ -151,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF9413F029B5EB6F00CFB3D1 /* LaunchScreen.storyboard in Resources */,
-				BF9413ED29B5EB6F00CFB3D1 /* Assets.xcassets in Resources */,
+				BF79B5C529B704E000FB25EA /* Assets.xcassets in Resources */,
 				BF9413EB29B5EB6E00CFB3D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -340,6 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

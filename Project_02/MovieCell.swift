@@ -33,7 +33,7 @@ class MovieCell: UITableViewCell {
         // cut down the description
         movieDescription.text = movie.overview;
         // load the image
-        let imageUrl = URL(string: "https://image.tmdb.org/t/p/w200/\(movie.poster_path)")!;
+        let imageUrl = URL(string: "https://image.tmdb.org/t/p/w200\(movie.poster_path)")!;
         Nuke.loadImage(with: imageUrl, into: moviePoster);
     }
 
