@@ -17,8 +17,58 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        // initialize the list of movies
-        movies = mockData()!;
+        
+        // Get the data from an api
+        
+        // Create the URL for the request
+        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=664b47a8b091af5bd9efe32e32d0add7")!;
+        
+        // Use the url to create request
+        let request = URLRequest(url: url);
+        
+        // With this request, create a url session by
+            // getting a singleton object
+            // now, we have the session, we'll do some task (there're 4 types of task)
+            // we'll use the dataTask() method -> retrieve the content of a URL
+            // we provide a closure(telling what to do when receive data) for the dataTask() method
+        let session = URLSession.shared.dataTask(with: request, completionHandler: { [weak self] data, response, error in
+            // Handle errors
+            if let error = error {
+                print("❌ Network error \(error.localizedDescription)");
+            }
+            
+            // Make sure we have data
+            guard let data = data else {
+                print("❌ Data is nil");
+                return;
+            }
+            
+            // Now we have no error, and we have some data.
+            // Let's map the response data to our model
+            do {
+                // create a JSON Decoder
+                let decoder = JSONDecoder();
+                // now do the decoding job
+                let response = try decoder.decode(MovieResponse.self, from: data);
+                // try out and see the result
+                let movies = response.results;
+//                print("From movies view: \(movies)");
+                // performing UI update on main thread
+                DispatchQueue.main.async {
+                    // Set the view controller's tracks property as this is the one the table view references
+                    self?.movies = movies;
+                    // Reload the table view when having new data
+                    self?.tableView.reloadData();
+                }
+                
+            } catch {
+                print("❌ Error parsing JSON: \(error.localizedDescription)");
+            }
+        });
+        
+        // We have the session, now we initiate it
+        session.resume();
+        
         // configure this class to be the datasource for table view
         tableView.dataSource = self;
         // enable auto height in cell
@@ -42,17 +92,19 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the cell that triggered the segue
-        if let cell = sender as? MovieCell,
-            // get the index of the particular cell
-            let indexPath = tableView.indexPath(for: cell),
-            // based on indexPath, we get the row, or the indexes of the arry
-            // now set up the movie on the destination
-            let destination = segue.destination as? DetailViewController {
-                // craft the according movie based on the indexPath
-                let movie = movies[indexPath.row];
-                // set the property of the destination
-                destination.movie = movie;
+        if segue.identifier == "moviesSegue" {
+            // Get the cell that triggered the segue
+            if let cell = sender as? MovieCell,
+                // get the index of the particular cell
+                let indexPath = tableView.indexPath(for: cell),
+                // based on indexPath, we get the row, or the indexes of the arry
+                // now set up the movie on the destination
+                let destination = segue.destination as? DetailViewController {
+                    // craft the according movie based on the indexPath
+                    let movie = movies[indexPath.row];
+                    // set the property of the destination
+                    destination.movie = movie;
+            }
         }
     }
     
