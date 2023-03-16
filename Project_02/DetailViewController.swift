@@ -41,6 +41,15 @@ class DetailViewController: UIViewController {
         detailDescription.text = movie.overview;
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "similarSegue" {
+            if let destination = segue.destination as? HomeViewController {
+               // change the url request
+                destination.urlString = "https://api.themoviedb.org/3/movie/\(self.movie.id)/similar?api_key=664b47a8b091af5bd9efe32e32d0add7"
+            }
+        }
+    }
+    
 
     /*
     // MARK: - Navigation

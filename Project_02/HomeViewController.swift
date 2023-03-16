@@ -10,6 +10,7 @@ import UIKit
 class HomeViewController: UIViewController, UITableViewDataSource {
     // The data to pass to data source
     var movies: [Movie] = []
+    var urlString:String = ""
     
     // Variable that represent table view
     @IBOutlet weak var tableView: UITableView!
@@ -18,10 +19,13 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        // Get the data from an api
+        // Initialize the URL string for the request if the there's no URL string yet
+        if urlString == "" {
+            urlString = "https://api.themoviedb.org/3/movie/now_playing?api_key=664b47a8b091af5bd9efe32e32d0add7"
+        }
         
-        // Create the URL for the request
-        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=664b47a8b091af5bd9efe32e32d0add7")!;
+        // Get the data from an api by first creating a URL 
+        let url = URL(string: urlString)!;
         
         // Use the url to create request
         let request = URLRequest(url: url);
@@ -105,7 +109,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
                     // set the property of the destination
                     destination.movie = movie;
             }
-        }
+        } 
     }
     
     override func viewWillAppear(_ animated: Bool) {

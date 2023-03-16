@@ -19,7 +19,7 @@ class PosterViewController: UIViewController, UICollectionViewDataSource {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        // Get the data from an api
+        // Get the data from an api if there's no data
         
         // Create the URL for the request
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=664b47a8b091af5bd9efe32e32d0add7")!;

@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Project_02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yym-fE-NLq">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="724"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="187" id="HYU-Cu-9gJ" customClass="MovieCell" customModule="Project_02" customModuleProvider="target">
@@ -100,11 +100,11 @@
             <objects>
                 <viewController id="1hB-5Q-4YY" customClass="DetailViewController" customModule="Project_02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y9U-4Z-HhX">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IjZ-lN-vEY" userLabel="Main Stack View">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="724"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f2l-EL-BcR">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="180"/>
@@ -119,10 +119,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BLO-Ec-N2T" userLabel="Stats Stack View">
-                                        <rect key="frame" x="0.0" y="220.66666666666669" width="393" height="269"/>
+                                        <rect key="frame" x="0.0" y="220.66666666666666" width="393" height="287.66666666666674"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="sjA-Ee-9av" userLabel="Vote Stack View">
-                                                <rect key="frame" x="0.0" y="109.33333333333333" width="188.66666666666666" height="50.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="118.66666666666664" width="188.66666666666666" height="50.666666666666671"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vote average" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRJ-2Q-m5o">
                                                         <rect key="frame" x="0.0" y="0.0" width="188.66666666666666" height="17.333333333333332"/>
@@ -131,7 +131,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Votes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPp-G8-gav">
-                                                        <rect key="frame" x="0.0" y="33.333333333333314" width="188.66666666666666" height="17.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="33.333333333333371" width="188.66666666666666" height="17.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
                                                         <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                                         <nil key="highlightedColor"/>
@@ -145,7 +145,7 @@
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="popularity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUN-F1-oQh">
-                                                <rect key="frame" x="204.66666666666663" y="125.99999999999999" width="188.33333333333337" height="17.333333333333329"/>
+                                                <rect key="frame" x="204.66666666666663" y="135.33333333333331" width="188.33333333333337" height="17.333333333333343"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
                                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
@@ -153,13 +153,21 @@
                                         </subviews>
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wk7-pC-FoU">
-                                        <rect key="frame" x="0.0" y="494.66666666666657" width="393" height="171.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="513.33333333333337" width="393" height="171.33333333333337"/>
                                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3C-DG-63t">
+                                        <rect key="frame" x="114" y="689.66666666666663" width="165" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="See similar movies"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="similarSegue" id="xZG-0r-liE"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="wk7-pC-FoU" firstAttribute="leading" secondItem="IjZ-lN-vEY" secondAttribute="leading" id="I96-Ep-d1e"/>
@@ -194,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4C-d8-09g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2718.320610687023" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="3010" y="125"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="29b-76-xyi">
@@ -321,6 +329,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="YAG-0Z-Vce"/>
+        <segue reference="xZG-0r-liE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="photo.artframe" catalog="system" width="128" height="93"/>
